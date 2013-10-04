@@ -1,0 +1,168 @@
+body {
+  color:#333;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-image: url(../images/pebbles.jpg);
+  margin: 0;
+  box-sizing:border-box;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+/* *************** top nav bar *************** *//* *************** top nav bar *************** */
+.top-nav{
+  background-color: #252525;
+  width:100%;
+  height: 40px;
+
+}
+.global-nav{
+  list-style: none;
+}
+.home{
+  background-image: url(../images/home.jpeg);
+  height:25px;
+  width:25px;
+}
+
+.connect{
+  background-image: url(../images/at.jpeg);
+}
+.discover{
+  background-image: 
+}
+.me{
+  background-image: 
+}
+.global-nav li{
+  display:inline;
+}
+
+/* *************** page structure *************** */
+.container {
+  display: -webkit-flex;
+  display: flex;
+  width:77%;
+  margin: 20px auto;
+}
+.sidebar {
+  width:40%;
+}
+
+.profile, .follow, .trends, .footer{
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  width: 90%;
+  float:left;
+  margin:20px auto 0;
+  padding:10px;
+  opacity: 0.9;
+}
+table{
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  font-size: 10px;
+  margin-top:10px;
+}
+thead {
+  color:#999;
+  font-size: 14px;
+}
+/* ******************* tweet container ************** */
+.tweet-container{
+  -webkit-flex:1;
+  flex:1;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  margin:20px 20px 0;
+  padding:10px;
+  opacity: 0.9;
+}
+.tweet-container h1{
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -3px;
+}
+/* *************** tweet box *************** */
+
+.tweet-box{
+  border-bottom: 1px solid #c3c3c3;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.tweet-box .user-profile{
+  width:;
+  margin: 15px 0 0 15px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#gravatar1{
+  background:url("../images/medium.jpeg");
+}
+#gravatar2{
+  background:url("../images/gravatar.jpg");
+}
+#gravatar3{
+  background:url("../images/bbcClick.jpg");
+}
+#gravatar1, #gravatar2, #gravatar3{
+  margin:10px 5px;
+  height:60px;
+  width:60px;
+  border-radius: 8px;
+}
+.tweet-text{
+  -webkit-flex:1;
+  flex:1;
+}
+.expand{
+  margin-left: 15px;
+  -webkit-flex:1;
+  flex:1;
+}
+/* *************** footer section *************** */
+.footer ul{
+  margin-left: -30px;
+
+}
+.footer li{
+  display: inline;
+  margin-right: 5px;
+}
+
+.footer li a{
+  color:#999;
+}
+.footer li a:hover, footer li a:active{
+  text-decoration: underline;
+  color:#434343;
+}
+.btn{background-color:#ddd;
+  background-repeat:repeat-x;
+  background-image:-moz-linear-gradient(#fff,#ddd);
+}
+/* *************** global styles profiles *************** */
+.name a{
+  color: #999;
+  font-weight: bold;
+  font-size: 10px;
+}
+.name a:hover, .name a:active{
+  color:#a15796;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.username{
+
+}
+.upcase{
+  text-transform: uppercase;
+}
