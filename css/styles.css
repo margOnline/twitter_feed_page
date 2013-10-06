@@ -2,9 +2,9 @@ body {
   color:#333;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   background-image: url(../images/pebbles.jpg);
   margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   box-sizing:border-box;
 }
 
@@ -25,7 +25,7 @@ ul{
   z-index: 999;
   color: #bbb;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 #spacing{
   height:30px;
@@ -64,8 +64,9 @@ ul{
 }
 
 .profile, .follow, .trends, .footer{
+  font-family: "Helvetica Neue", Arial, sans-serif;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 12px;
   background-color: #f7f7f7;
   width: 90%;
   float:left;
@@ -89,12 +90,12 @@ ul{
 }
 .profile-stats tfoot, .tweet-stats thead{
   color:black;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
 }
 .profile-stats tfoot, .tweet-stats tfoot{
   color:#999;
-  font-size: 12px;
+  font-size: 10px;
 }
 /* *************** profile box *************** */
 .profile-info{
@@ -129,7 +130,7 @@ ul{
   width:100%;
 }
 .instruction{
-  font-size: 14px;
+  font-size: 12px;
   margin: -15px 0 0 10px;
   color:#999;
 }
@@ -137,7 +138,7 @@ ul{
   background-color: #f2f2f2;
 }
 .profile-form button{
-  font-size: 14px;
+  font-size: 12px;
   width:98%;
   background-color: #fff;
   color: #999;
@@ -185,8 +186,8 @@ ul{
 .tweet-box .user-profile{
   width:;
   margin: 15px 0 0 15px;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .gravatar1{
@@ -247,7 +248,7 @@ ul{
 .name a{
   color: #333;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 .name a:hover, .name a:active{
   color:#a15796;
@@ -257,7 +258,7 @@ ul{
 .username{
   color: #999;
 /*  font-weight: bold;*/
-  font-size: 14px;
+  font-size: 12px;
 }
 .upcase{
   text-transform: uppercase;
