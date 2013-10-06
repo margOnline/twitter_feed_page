@@ -3,6 +3,7 @@
   <head>
     <title>ChitterCloneFeed</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./js/spin.min.js"></script>
     <script src="./js/application.js"></script>
     <link href="//abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link rel="stylesheet" type="text/css" href="./css/styles.css">
@@ -79,7 +80,7 @@
 
     <div class='tweet-container'>
       <div class="wrap prev-entries">
-        <h1>Tweets</h1>
+        <h2>Tweets</h2>
       </div>
 
       <ul id="tweet-list">
@@ -89,6 +90,7 @@
             <div class="user-profile">
               <span class='name'><a href="#">BBClick</span>
               <span class='username'>@bbclick</span></a>
+              <span class='time'>3m</span>
               <p class='tweet'>How Iceland is going green with hydroelectic, methane vehicles</p>
             </div>
             <p class="expand1"><a href="#">Expand</a></p>
@@ -113,6 +115,7 @@
             <div class="user-profile">
               <span class='name'><a href="#">Margo Urey</span>
               <span class='username'>@margOnline</span></a>
+              <span class='time'>27m</span>
               <p class='tweet'>#superChitter now updates in real time bitly.57fyhr</p>
             </div>
             <p class="expand2"><a href="#">Expand</a></p>
@@ -137,6 +140,7 @@
             <div class="user-profile">
               <span class='name'><a href="#">Medium</span>
               <span class='username'>@medium</span></a>
+              <span class='time'>56m</span>
               <p class='tweet'>How Games Can Organize Millions of People to Accomplish Great Things by @Penenberg</p>
             </div>
             <p class="expand3"><a href="#">Expand</a></p>
@@ -161,10 +165,11 @@
             <div class="user-profile">
               <span class='name'><a href="#">BBClick</span>
               <span class='username'>@bbclick</span></a>
+              <span class='time'>1h</span>
               <p class='tweet'>How Iceland is going green with hydroelectic, methane vehicles</p>
             </div>
-            <p class="expand1"><a href="#">Expand</a></p>
-            <div class="expand-content1">
+            <p class="expand4"><a href="#">Expand</a></p>
+            <div class="expand-content4">
               <table class="tweet-stats">
                 <thead>
                   <td>3429</td>
@@ -185,10 +190,11 @@
             <div class="user-profile">
               <span class='name'><a href="#">Margo Urey</span>
               <span class='username'>@margOnline</span></a>
+              <span class='time'>5h</span>
               <p class='tweet'>#superChitter now updates in real time bitly.57fyhr</p>
             </div>
-            <p class="expand2"><a href="#">Expand</a></p>
-            <div class="expand-content2">
+            <p class="expand5"><a href="#">Expand</a></p>
+            <div class="expand-content5">
               <table class="tweet-stats">
                 <thead>
                   <td>29</td>
@@ -209,10 +215,11 @@
             <div class="user-profile">
               <span class='name'><a href="#">Medium</span>
               <span class='username'>@medium</span></a>
+              <span class='time'>1d</span>
               <p class='tweet'>How Games Can Organize Millions of People to Accomplish Great Things by @Penenberg</p>
             </div>
-            <p class="expand3"><a href="#">Expand</a></p>
-            <div class="expand-content3">
+            <p class="expand6"><a href="#">Expand</a></p>
+            <div class="expand-content6">
               <table class="tweet-stats">
                 <thead>
                   <td>129</td>
@@ -233,10 +240,11 @@
             <div class="user-profile">
               <span class='name'><a href="#">BBClick</span>
               <span class='username'>@bbclick</span></a>
+              <span class='time'>1d</span>
               <p class='tweet'>How Iceland is going green with hydroelectic, methane vehicles</p>
             </div>
-            <p class="expand1"><a href="#">Expand</a></p>
-            <div class="expand-content1">
+            <p class="expand7"><a href="#">Expand</a></p>
+            <div class="expand-content7">
               <table class="tweet-stats">
                 <thead>
                   <td>3429</td>
@@ -257,10 +265,11 @@
             <div class="user-profile">
               <span class='name'><a href="#">Margo Urey</span>
               <span class='username'>@margOnline</span></a>
+              <span class='time'>5 Oct</span>
               <p class='tweet'>#superChitter now updates in real time bitly.57fyhr</p>
             </div>
-            <p class="expand2"><a href="#">Expand</a></p>
-            <div class="expand-content2">
+            <p class="expand8"><a href="#">Expand</a></p>
+            <div class="expand-content8">
               <table class="tweet-stats">
                 <thead>
                   <td>29</td>
@@ -281,10 +290,11 @@
             <div class="user-profile">
               <span class='name'><a href="#">Medium</span>
               <span class='username'>@medium</span></a>
+              <span class='time'>5 Oct</span>
               <p class='tweet'>How Games Can Organize Millions of People to Accomplish Great Things by @Penenberg</p>
             </div>
-            <p class="expand3"><a href="#">Expand</a></p>
-            <div class="expand-content3">
+            <p class="expand10"><a href="#">Expand</a></p>
+            <div class="expand-content10">
               <table class="tweet-stats">
                 <thead>
                   <td>129</td>
@@ -300,7 +310,8 @@
           </div>
         </li>
       </ul>
-      <div id="spinner"><img alt="Spinner" src="./images/spinner.jpeg" /> loading...</div>
+      <div id="spinner"></div>
+ <!--      <div id="spinner"><img alt="Spinner" src="./images/spinner.jpeg" /> loading...</div> -->
     </div>
     <script>
       $(document).ready(function(){
@@ -332,5 +343,27 @@
     <script type="text/javascript">
       $('#tweet-list').infiniScroll('pollLevel');
     </script>
+    <script>
+      var opts = {
+        lines: 9, // The number of lines to draw
+        length: 3, // The length of each line
+        width: 2, // The line thickness
+        radius: 5, // The radius of the inner circle
+        corners: 1, // Corner roundness (0..1)
+        rotate: 0, // The rotation offset
+        direction: 1, // 1: clockwise, -1: counterclockwise
+        color: '#000', // #rgb or #rrggbb or array of colors
+        speed: 0.8, // Rounds per second
+        trail: 58, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: true, // Whether to use hardware acceleration
+        className: 'spinner', // The CSS class to assign to the spinner
+        zIndex: 2e9, // The z-index (defaults to 2000000000)
+        top: 'auto', // Top position relative to parent in px
+        left: 'auto' // Left position relative to parent in px
+      };
+      var target = document.getElementById('spinner');
+      var spinner = new Spinner(opts).spin(target);
+  </script>
   </body>
 </html>

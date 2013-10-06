@@ -118,7 +118,7 @@ ul{
 }
 .profile-name h3 a{
   color:black;
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 10px;
 }
 .profile-name h3 a:hover, .profile-name h3 a:active, 
@@ -170,10 +170,10 @@ ul{
   padding:10px;
   font-family:sans-serif; 
 }
-.tweet-container h1{
-  font-weight: bold;
-  line-height: 20px;
-  letter-spacing: -3px;
+.tweet-container h2{
+/*  font-weight: bold;*/
+  font-size: 18px;
+  color: #333;
 }
 /* *************** tweet box *************** */
 
@@ -181,6 +181,7 @@ ul{
   border-bottom: 1px solid #c3c3c3;
   display: -webkit-flex;
   display: flex;
+  margin-left: -45px;
 }
 
 .tweet-box .user-profile{
@@ -201,8 +202,8 @@ ul{
 }
 .gravatar1, .gravatar2, .gravatar3{
   margin:15px 5px 10px;
-  height:60px;
-  width:60px;
+  height:45px;
+  width:45px;
   border-radius: 8px;
 }
 .tweet-text{
@@ -259,6 +260,13 @@ ul{
   color: #999;
 /*  font-weight: bold;*/
   font-size: 12px;
+}
+.time{
+  display:inline-block;
+  float:right;
+  color:#999;
+  font-size: 12px;
+  margin-right: 5px;
 }
 .upcase{
   text-transform: uppercase;
