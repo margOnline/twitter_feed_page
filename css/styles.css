@@ -88,7 +88,7 @@ ul{
 .profile-stats td:nth-child(3), .tweet-stats td:nth-child(3){
   padding-left: 10px;
 }
-.profile-stats tfoot, .tweet-stats thead{
+.profile-stats thead, .tweet-stats thead{
   color:black;
   font-size: 12px;
   font-weight: bold;
