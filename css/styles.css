@@ -73,15 +73,15 @@ ul{
   padding:10px;
 }
 .profile-stats, .tweet-stats{
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
   margin-top:10px;
   padding: 10px;
 }
 
 .profile-stats td:nth-child(2), .tweet-stats td:nth-child(2){
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
   padding-left: 10px;
 }
 .profile-stats td:nth-child(3), .tweet-stats td:nth-child(3){
@@ -132,7 +132,32 @@ ul{
   margin: -15px 0 0 10px;
   color:#999;
 }
-
+.profile-form{
+  background-color: #f2f2f2;
+}
+.profile-form button{
+  font-size: 14px;
+  width:98%;
+  background-color: #fff;
+  color: #999;
+  margin:10px auto;
+  border-radius: 6px;
+  height: 40px;
+  text-align: left;
+ border: 1px solid #c4c4c4;
+  -moz-box-shadow:
+    0px 1px 1px rgba(148,148,148,0.5),
+    inset 0px 0px 1px rgba(196,196,196,1);
+  -webkit-box-shadow:
+    0px 1px 1px rgba(148,148,148,0.5),
+    inset 0px 0px 1px rgba(196,196,196,1);
+  box-shadow:
+    0px 1px 1px rgba(148,148,148,0.5),
+    inset 0px 0px 1px rgba(196,196,196,1);
+  text-shadow:
+    0px -1px 0px rgba(196,196,196,0.2),
+    0px 1px 0px rgba(255,255,255,1);
+}
 /* ******************* tweet container ************** */
 .tweet-container{
   -webkit-flex:1;
