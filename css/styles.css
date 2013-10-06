@@ -120,7 +120,8 @@ ul{
   font-size: 18px;
   margin-left: 10px;
 }
-.profile-name h3 a:hover, .profile-name h3 a:active{
+.profile-name h3 a:hover, .profile-name h3 a:active, 
+.expand a:hover, .expand a:active{
   color:#B26FA7;
   text-decoration: underline;
 }
@@ -144,7 +145,7 @@ ul{
   border-radius: 6px;
   height: 40px;
   text-align: left;
- border: 1px solid #c4c4c4;
+  border: 1px solid #c4c4c4;
   -moz-box-shadow:
     0px 1px 1px rgba(148,148,148,0.5),
     inset 0px 0px 1px rgba(196,196,196,1);
@@ -166,7 +167,7 @@ ul{
   background-color: #f7f7f7;
   margin:20px 20px 0;
   padding:10px;
-/*  opacity: 0.9;*/
+  font-family:sans-serif; 
 }
 .tweet-container h1{
   font-weight: bold;
@@ -188,17 +189,17 @@ ul{
   line-height: 18px;
 }
 
-#gravatar1{
+.gravatar1{
   background:url("../images/medium.jpeg");
 }
 .gravatar2{
   background:url("../images/gravatar.jpg");
 }
-#gravatar3{
+.gravatar3{
   background:url("../images/bbcClick.jpg");
 }
-#gravatar1, .gravatar2, #gravatar3{
-  margin:10px 5px;
+.gravatar1, .gravatar2, .gravatar3{
+  margin:15px 5px 10px;
   height:60px;
   width:60px;
   border-radius: 8px;
@@ -207,10 +208,19 @@ ul{
   -webkit-flex:1;
   flex:1;
 }
-.expand{
-  margin-left: 15px;
+.expand1, .expand2, .expand3, .expand4, .expand5, 
+.expand6, .expand7, .expand8, .expand9, .expand10{
+  margin: -10px 0 5px 15px;
   -webkit-flex:1;
   flex:1;
+}
+.expand1 a, .expand2 a,.expand3 a,.expand4 a,.expand5 a,
+.expand6 a, .expand7 a, .expand8 a, .expand9 a, .expand10 a{
+    color: #999;
+}
+.tweet{
+  margin-top: 5px;
+  line-height: 1.3em;
 }
 /* *************** footer section *************** */
 .footer ul{
@@ -235,9 +245,9 @@ ul{
 }
 /* *************** global styles profiles *************** */
 .name a{
-  color: #999;
+  color: #333;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 18px;
 }
 .name a:hover, .name a:active{
   color:#a15796;
@@ -245,20 +255,17 @@ ul{
   font-weight: bold;
 }
 .username{
-
+  color: #999;
+/*  font-weight: bold;*/
+  font-size: 14px;
 }
 .upcase{
   text-transform: uppercase;
 }
 /* *************** javascript expand / collapse css *************** */
 
-/*.collapse-content {
-    overflow: hidden;
-    line-height: 1em;
-    height: 12em;
-}*/
-.expand-content {
-/*    line-height: 1em;
-    height: auto;*/
-    display:visible;
+.expand-content1, .expand-content2, .expand-content3, .expand-content4, .expand-content5,
+.expand-content6, .expand-content7, .expand-content8, .expand-content9, .expand-content10 {
+  display:none;
+  margin-bottom: 10px;
 }
