@@ -23,6 +23,9 @@ ul{
   top:0;
   left:0;
   z-index: 999;
+  color: #bbb;
+  font-weight: bold;
+  font-size: 18px;
 }
 #spacing{
   height:30px;
@@ -30,23 +33,23 @@ ul{
 .global-nav{
   list-style: none;
 }
-.home{
-  background-image: url(../images/home.jpeg);
-  height:25px;
-  width:25px;
+.top-nav .global-nav li {
+  margin-right: 80px;
 }
 
-.connect{
-  background-image: url(../images/at.jpeg);
+.global-nav li a {
+  color: #bbb;
 }
-.discover{
-  background-image: 
+.global-nav li a:active, .global-nav li a:hover{
+  color: #fff;
 }
-.me{
-  background-image: 
-}
+
 .global-nav li{
   display:inline;
+  margin-right: 20px;
+}
+.global-nav li img{
+  margin-right: 8px;
 }
 
 /* *************** page structure *************** */
@@ -68,18 +71,68 @@ ul{
   float:left;
   margin:20px auto 0;
   padding:10px;
-  opacity: 0.9;
 }
-table{
+.profile-stats, .tweet-stats{
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
-  font-size: 10px;
   margin-top:10px;
+  padding: 10px;
 }
-thead {
+
+.profile-stats td:nth-child(2), .tweet-stats td:nth-child(2){
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  padding-left: 10px;
+}
+.profile-stats td:nth-child(3), .tweet-stats td:nth-child(3){
+  padding-left: 10px;
+}
+.profile-stats tfoot, .tweet-stats thead{
+  color:black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.profile-stats tfoot, .tweet-stats tfoot{
   color:#999;
-  font-size: 14px;
+  font-size: 12px;
 }
+/* *************** profile box *************** */
+.profile-info{
+  display: -webkit-flex;
+  display: flex;
+}
+.profile-gravatar{
+  background:url("../images/gravatar.jpg");
+  margin:10px 5px;
+  height:40px;
+  width:40px;
+  border-radius: 8px;
+}
+.profile-name {
+  -webkit-flex:1;
+  flex:1;
+}
+.profile-name h3{
+  margin-top: 10px;
+}
+.profile-name h3 a{
+  color:black;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.profile-name h3 a:hover, .profile-name h3 a:active{
+  color:#B26FA7;
+  text-decoration: underline;
+}
+ .profile-stats{
+  width:100%;
+}
+.instruction{
+  font-size: 14px;
+  margin: -15px 0 0 10px;
+  color:#999;
+}
+
 /* ******************* tweet container ************** */
 .tweet-container{
   -webkit-flex:1;
@@ -88,7 +141,7 @@ thead {
   background-color: #f7f7f7;
   margin:20px 20px 0;
   padding:10px;
-  opacity: 0.9;
+/*  opacity: 0.9;*/
 }
 .tweet-container h1{
   font-weight: bold;
@@ -113,13 +166,13 @@ thead {
 #gravatar1{
   background:url("../images/medium.jpeg");
 }
-#gravatar2{
+.gravatar2{
   background:url("../images/gravatar.jpg");
 }
 #gravatar3{
   background:url("../images/bbcClick.jpg");
 }
-#gravatar1, #gravatar2, #gravatar3{
+#gravatar1, .gravatar2, #gravatar3{
   margin:10px 5px;
   height:60px;
   width:60px;
@@ -151,7 +204,7 @@ thead {
   text-decoration: underline;
   color:#434343;
 }
-.btn{background-color:#ddd;
+.button{background-color:#ddd;
   background-repeat:repeat-x;
   background-image:-moz-linear-gradient(#fff,#ddd);
 }
@@ -171,4 +224,16 @@ thead {
 }
 .upcase{
   text-transform: uppercase;
+}
+/* *************** javascript expand / collapse css *************** */
+
+/*.collapse-content {
+    overflow: hidden;
+    line-height: 1em;
+    height: 12em;
+}*/
+.expand-content {
+/*    line-height: 1em;
+    height: auto;*/
+    display:visible;
 }

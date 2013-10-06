@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>ChitterCloneFeed</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./js/application.js"></script>
     <link href="//abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
@@ -10,32 +12,36 @@
   <body>
     <nav id="top-nav">
       <ul class='global-nav'>
-        <li class='home'>Home</li>
-        <li class='connect'>Connect</li>
-        <li clas='discover'>Discover</li>
-        <li class='me'>Me</li>
+        <li><img src="http://www.bbsrc.ac.uk/upload/structure/img/i-home.png">Home</li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Me</a></li>
       </ul>
     </nav>
     <div id='spacing'>  </div>
     <div class='container'>
       <div class='sidebar'>
         <section class='profile'>
-          <img class='profile-pic' src=""/>
-          <div class='profile-name'>
-            view my profile &#183
+          <div class='profile-info'>
+            <div class='profile-gravatar'> </div>
+            <div class='profile-name'>      
+              <h3><a href="#">Margo<a/></h3>
+              <p class='instruction'>View my profile page</p>
+            </div>
           </div>
-          <table class="stats">
-            <thead>
-              <td>5129</td>
-              <td>321</td>
-              <td>436</td>
-            </thead>
-            <tfoot class='upcase'>
-              <td>tweets</td>
-              <td>following</td>
-              <td>trends</td>
-            </tfoot>
-          </table>
+            <table class="profile-stats">
+              <thead>
+                <td>5129</td>
+                <td>321</td>
+                <td>436</td>
+              </thead>
+              <tfoot class='upcase'>
+                <td>tweets</td>
+                <td>following</td>
+                <td>followers</td>
+              </tfoot>
+            </table>
+     
         </section>
 
       <section class='follow'>
@@ -68,8 +74,11 @@
     </div>
 
     <div class='tweet-container'>
-      <h1>Tweets</h1>
-      <ul class="tweet-list">
+      <div class="wrap prev-entries">
+        <h1>Tweets</h1>
+      </div>
+
+      <ul id="tweet-list">
         <li class='tweet-box'>
           <div id='gravatar1'></div>
           <div class="tweet-text">
@@ -78,29 +87,29 @@
               <span class='username'>@medium</span>
               <p class='tweet'>Its All in Your Head (and Thats a Good Thing)</p>
             </div>
-            <p class="expand">Expand</p>
+            <p class="expand"><a href="#">Expand</a></p> 
           </div> 
         </li>
         <li class='tweet-box'>
-          <div id='gravatar2'></div>
+          <div class='gravatar2'></div>
           <div class="tweet-text">
             <div class="user-profile">
-              <a href="#" class='name'>Margo Urey<a/>
+              <span class='name'><a href="#">Margo Urey<a/><span>
               <span class='username'>@margOnline</span>
               <p class='tweet'>#superChitter now updates in real time bitly.57fyhr</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p> 
           <div>
         </li>
         <li class='tweet-box'>
           <div id='gravatar3'></div>
           <div class="tweet-text">
             <div class="user-profile">
-              <a href="#" class='name'>BBClick<a/>
+              <span class='name'><a href="#">BBClick<a/></span>
               <span class='username'>@bbclick</span>
               <p class='tweet'>How Iceland is going green with hydroelectic, methane vehicles</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p> 
           </div>
         </li>
         <li class='tweet-box'>
@@ -111,18 +120,18 @@
               <span class='username'>@medium</span>
               <p class='tweet'>Its All in Your Head (and Thats a Good Thing)</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p> 
           </div>
         </li>
         <li class='tweet-box'>
-          <div id='gravatar2'></div>
+          <div class='gravatar2'></div>
           <div class="tweet-text">
             <div class="user-profile">
               <a href="#" class='name'>Margo Urey<a/>
               <span class='username'>@margOnline</span>
               <p class='tweet'>#superChitter now updates in real time bitly.57fyhr</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p>  
           </div>
         </li>
         <li class='tweet-box'>
@@ -133,7 +142,7 @@
               <span class='username'>@bbclick</span>
               <p class='tweet'>How Iceland is going green with hydroelectic, methane vehicles</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p> 
           </div>
         </li>
         <li class='tweet-box'>
@@ -144,18 +153,31 @@
               <span class='username'>@medium</span>
               <p class='tweet'>Its All in Your Head (and Thats a Good Thing)</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">expand</a></p>
+            <div class="expand-content">
+              <table class="tweet-stats">
+                <thead>
+                  <td>29</td>
+                  <td>7</td>
+                  <td>3</td>
+                </thead>
+                <tfoot class='upcase'>
+                  <td>retweets</td>
+                  <td>favourite</td>
+                  <td>reply</tc>
+                </tfoot>
+              </table>
           </div>
         </li>
         <li class='tweet-box'>
-          <div id='gravatar2'></div>
+          <div class='gravatar2'></div>
           <div class="tweet-text">
             <div class="user-profile">
               <a href="#" class='name'>Margo Urey<a/>
               <span class='username'>@margOnline</span>
               <p class='tweet'>#superChitter now updates in real time. Coding prodigy @willBartlett calls it a feat in coding. bitly.57fyhr</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p>  
           </div>
         </li>
         <li class='tweet-box'>
@@ -166,32 +188,24 @@
               <span class='username'>@bbclick</span>
               <p class='tweet'>How Iceland is going green with hydroelectic, methane vehicles</p>
             </div>
-            <p class="expand">Expand</p> 
+            <p class="expand"><a href="#">Expand</a></p> 
           </div>
         </li>
+      </ul>
+      <div id="spinner"><img alt="Spinner" src="./images/spinner.jpeg" /> loading...</div>
     </div>
+    <script>
+      $(document).ready(function(){
+        $('.expand a').click(function(){
+          $('.expand-content').slideToggle("slow");
+          $(this).toggleClass("active");
+          return false;
+        });
+      });
+    </script>
 
-
-
-
-
-
-
-
+    <script type="text/javascript">
+      $('#tweet-list').infiniScroll('pollLevel');
+    </script>
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
